@@ -32,7 +32,7 @@ public final class Transaction {
     }
 
     /**
-     * Function to sleep the program or given number of seconds.
+     * Main function to test the overall functionality.
      *
      * @param args List of arguments passed to main
      *

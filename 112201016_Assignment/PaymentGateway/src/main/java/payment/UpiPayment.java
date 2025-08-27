@@ -6,13 +6,16 @@ package payment;
 public class UpiPayment implements PaymentGateway {
     /**
      * Variable to set the amount already present in the account.
-     * */
+     *
+     */
     private double accountCredit;
 
     /**
      * Constructor function.
+     *
      * @param initialAmount starting amount
-     * */
+     *
+     */
     public UpiPayment(final double initialAmount) {
         System.out.println("CreditCard payment initialising...");
         accountCredit = initialAmount;
@@ -21,8 +24,10 @@ public class UpiPayment implements PaymentGateway {
 
     /**
      * Pay an amount from this account.
+     *
      * @param amount Amount to deduct
-     * */
+     *
+     */
     @Override
     public void pay(final double amount) {
         System.out.println("Payment processing through credit card...");
@@ -36,7 +41,8 @@ public class UpiPayment implements PaymentGateway {
 
     /**
      * Return the amount remaining.
-     * */
+     *
+     */
     @Override
     public double getAmount() {
         return accountCredit;
